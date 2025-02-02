@@ -1,9 +1,128 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
-    text-align: center;
+    line-height: 1.6;
     background-color: #f4f4f4;
-    padding: 50px;
-}
-h1 {
     color: #333;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #0073e6;
+    color: white;
+    padding: 1rem 0;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+header nav ul li {
+    margin: 0 1rem;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Carrossel */
+#carousel {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 2rem auto;
+    overflow: hidden;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+}
+
+.carousel-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-image {
+    width: 100%;
+    display: none;
+}
+
+.carousel-image.active {
+    display: block;
+}
+
+/* Formulário de Contato */
+#contact {
+    text-align: center;
+    margin: 2rem auto;
+    max-width: 600px;
+}
+
+#contact h2 {
+    margin-bottom: 1rem;
+}
+
+#contact-form label {
+    display: block;
+    margin: 0.5rem 0 0.2rem;
+}
+
+#contact-form input,
+#contact-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#contact-form button {
+    padding: 0.5rem 1rem;
+    background-color: #0073e6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#contact-form button:hover {
+    background-color: #005bb5;
+}
+
+/* Rodapé com WhatsApp */
+footer {
+    text-align: center;
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: #0073e6;
+    color: white;
+}
+
+.whatsapp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.whatsapp i {
+    font-size: 2rem;
+    color: #25d366;
+}
+
+.whatsapp span {
+    font-size: 1.2rem;
 }
