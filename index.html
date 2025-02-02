@@ -3,12 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Site</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Dados Públicos</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <h1>Bem-vindo ao meu site!</h1>
-    <p>Este é um exemplo de site hospedado no GitHub Pages.</p>
-    <img src="images/logo.png" alt="Logo">
+    <!-- Cabeçalho -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#rio-cidade">Rio Cidade</a></li>
+                <li><a href="#estado-rio">Estado do Rio</a></li>
+                <li><a href="#governo-federal">Governo Federal</a></li>
+                <li><a href="#arquivos">Arquivos</a></li>
+                <li><a href="#outros-artigos">Outros Artigos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Carrossel de Imagens -->
+    <section id="carousel">
+        <div class="carousel-container">
+            <img src="imagem1.jpg" alt="Imagem 1" class="carousel-image active">
+            <img src="imagem2.jpg" alt="Imagem 2" class="carousel-image">
+            <img src="imagem3.jpg" alt="Imagem 3" class="carousel-image">
+        </div>
+    </section>
+
+    <!-- Formulário de Contato -->
+    <section id="contact">
+        <h2>Entre em Contato</h2>
+        <form id="contact-form">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="phone">Telefone:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Mensagem:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Ícone do WhatsApp -->
+    <footer>
+        <div class="whatsapp">
+            <a href="https://wa.me/5521982230115" target="_blank">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+            <span>ENTRE EM CONTATO</span>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
