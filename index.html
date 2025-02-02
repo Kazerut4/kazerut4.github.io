@@ -3,63 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dados Públicos</title>
+    <title>Base de Dados</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <!-- Cabeçalho -->
     <header>
         <nav>
             <ul>
-                <li><a href="#rio-cidade">Rio Cidade</a></li>
-                <li><a href="#estado-rio">Estado do Rio</a></li>
-                <li><a href="#governo-federal">Governo Federal</a></li>
-                <li><a href="#arquivos">Arquivos</a></li>
-                <li><a href="#outros-artigos">Outros Artigos</a></li>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#datasets">Conjuntos de Dados</a></li>
+                <li><a href="#documentacao">Documentação</a></li>
+                <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Carrossel de Imagens -->
-    <section id="carousel">
-        <div class="carousel-container">
-            <img src="imagem1.jpg" alt="Imagem 1" class="carousel-image active">
-            <img src="imagem2.jpg" alt="Imagem 2" class="carousel-image">
-            <img src="imagem3.jpg" alt="Imagem 3" class="carousel-image">
+    <!-- Seção Inicial -->
+    <section id="inicio">
+        <h1>Bem-vindo à Base de Dados</h1>
+        <p>Aqui você encontra dados públicos organizados e acessíveis.</p>
+    </section>
+
+    <!-- Conjuntos de Dados -->
+    <section id="datasets">
+        <h2>Conjuntos de Dados</h2>
+        <div class="dataset-list">
+            <div class="dataset-item">
+                <h3>Nome do Dataset</h3>
+                <p>Descrição breve do dataset.</p>
+                <a href="#">Acessar</a>
+            </div>
+            <!-- Repita para outros datasets -->
         </div>
     </section>
 
-    <!-- Formulário de Contato -->
-    <section id="contact">
-        <h2>Entre em Contato</h2>
-        <form id="contact-form">
-            <label for="name">Nome:</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="phone">Telefone:</label>
-            <input type="tel" id="phone" name="phone" required>
-
-            <label for="email">E-mail:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="message">Mensagem:</label>
-            <textarea id="message" name="message" required></textarea>
-
-            <button type="submit">Enviar</button>
-        </form>
-    </section>
-
-    <!-- Ícone do WhatsApp -->
+    <!-- Rodapé -->
     <footer>
-        <div class="whatsapp">
-            <a href="https://wa.me/5521982230115" target="_blank">
-                <i class="fab fa-whatsapp"></i>
-            </a>
-            <span>ENTRE EM CONTATO</span>
-        </div>
+        <p>&copy; 2023 Base de Dados. Todos os direitos reservados.</p>
     </footer>
-
-    <script src="scripts.js"></script>
 </body>
 </html>
