@@ -1,18 +1,10 @@
-/* Reset básico */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
     font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
     line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
 }
 
-/* Cabeçalho */
 header {
     background-color: #0073e6;
     color: white;
@@ -35,94 +27,33 @@ header nav ul li a {
     font-weight: bold;
 }
 
-header nav ul li a:hover {
-    text-decoration: underline;
-}
-
-/* Carrossel */
-#carousel {
-    position: relative;
-    width: 100%;
-    max-width: 800px;
-    margin: 2rem auto;
-    overflow: hidden;
-    border: 2px solid #ddd;
-    border-radius: 10px;
-}
-
-.carousel-container {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-}
-
-.carousel-image {
-    width: 100%;
-    display: none;
-}
-
-.carousel-image.active {
-    display: block;
-}
-
-/* Formulário de Contato */
-#contact {
+#inicio {
     text-align: center;
-    margin: 2rem auto;
-    max-width: 600px;
+    padding: 2rem;
+    background-color: #f4f4f4;
 }
 
-#contact h2 {
-    margin-bottom: 1rem;
+#datasets {
+    padding: 2rem;
 }
 
-#contact-form label {
-    display: block;
-    margin: 0.5rem 0 0.2rem;
+.dataset-list {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
 }
 
-#contact-form input,
-#contact-form textarea {
-    width: 100%;
-    padding: 0.5rem;
-    margin-bottom: 1rem;
-    border: 1px solid #ccc;
+.dataset-item {
+    border: 1px solid #ddd;
+    padding: 1rem;
     border-radius: 5px;
+    width: 200px;
+    text-align: center;
 }
 
-#contact-form button {
-    padding: 0.5rem 1rem;
-    background-color: #0073e6;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-#contact-form button:hover {
-    background-color: #005bb5;
-}
-
-/* Rodapé com WhatsApp */
 footer {
     text-align: center;
-    margin-top: 2rem;
     padding: 1rem;
     background-color: #0073e6;
     color: white;
-}
-
-.whatsapp {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5rem;
-}
-
-.whatsapp i {
-    font-size: 2rem;
-    color: #25d366;
-}
-
-.whatsapp span {
-    font-size: 1.2rem;
 }
